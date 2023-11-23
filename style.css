@@ -80,6 +80,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 5px;
+  visibility: hidden;
 }
 
 p {
@@ -137,6 +138,7 @@ footer {
   }
 
   .controls {
+    visibility: visible;
     margin: -20px 0px 10px 0px;
     width: 180px;
   }
