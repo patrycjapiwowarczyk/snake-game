@@ -73,7 +73,7 @@ body {
 
 .controls {
   height: 90px;
-  width: 300px;
+  width: 220px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,13 +83,13 @@ body {
   margin: 20px 0px 20px 0px;
   text-align: center;
   font-style: normal;
-  font-weight: 900;
-  font-size: 50px;
+  font-weight: 200;
+  font-size: 40px;
   color: rgba(177, 177, 177, 0.733);
   padding: 5px 0px;
   width: calc(100% / 4);
   cursor: pointer;
-  border-radius: 10%;
+  border: none;
 }
 
 .controls i:hover {
@@ -114,8 +114,8 @@ footer {
   .grid {
     width: 320px;
     height: 320px;
-    grid-template-columns: repeat(20, 15px);
-    grid-template-rows: repeat(20, 15px);
+    grid-template-columns: repeat(20, 16px);
+    grid-template-rows: repeat(20, 16px);
   }
 
   .food {
@@ -125,16 +125,17 @@ footer {
   }
 
   .snake {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
   }
 
   .controls {
-    height: 90px;
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 180px;
+  }
+
+  .controls i {
+    font-size: 28px;
+    cursor: none;
   }
 
   footer {
