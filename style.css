@@ -1,0 +1,135 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/snake.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.score {
+  padding: 20px 0px;
+  font-size: 26px;
+  font-weight: 300;
+  color: rgba(177, 177, 177, 0.733);
+}
+
+.gridContainer {
+  width: 640px;
+  height: 640px;
+  background-color: rgba(167, 167, 167, 0.616);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+  width: 600px;
+  height: 600px;
+}
+
+.food {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: none;
+}
+
+.snake {
+  width: 34px;
+  height: 33px;
+  background-color: rgba(17, 17, 17, 0.651);
+  border-radius: 50%;
+  border: 3px solid rgba(17, 17, 17, 0.651);
+}
+
+.controls {
+  height: 90px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls i {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: rgba(177, 177, 177, 0.733);
+  padding: 5px 0px;
+  width: calc(100% / 4);
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.controls i:hover {
+  background-color: rgba(117, 117, 117, 0.144);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(123, 255, 0);
+  font-weight: 100;
+}
+
+@media screen and (max-width: 700px) {
+  .gridContainer {
+    width: 350px;
+    height: 350px;
+  }
+
+  .grid {
+    width: 320px;
+    height: 320px;
+    grid-template-columns: repeat(20, 15px);
+    grid-template-rows: repeat(20, 15px);
+  }
+
+  .food {
+    width: 10px;
+    height: 10px;
+    font-size: 26px;
+  }
+
+  .snake {
+    width: 15px;
+    height: 15px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
