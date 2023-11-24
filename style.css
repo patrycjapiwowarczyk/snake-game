@@ -29,7 +29,7 @@ body {
 }
 
 .score {
-  padding: 30px 0px;
+  padding: 45px 0px;
   font-size: 28px;
   font-weight: 300;
   color: rgba(177, 177, 177, 0.733);
@@ -85,6 +85,10 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+  .score {
+    font-size: 25px;
+  }
+
   .gridContainer {
     width: 350px;
     height: 350px;
