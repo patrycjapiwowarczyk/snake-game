@@ -29,8 +29,8 @@ body {
 }
 
 .score {
-  padding: 20px 0px;
-  font-size: 26px;
+  padding: 30px 0px;
+  font-size: 30px;
   font-weight: 300;
   color: rgba(177, 177, 177, 0.733);
 }
@@ -72,35 +72,7 @@ body {
 }
 
 .controls {
-  margin: -20px 0px 30px 0px;
-  height: 120px;
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 5px;
   visibility: hidden;
-}
-
-p {
-  margin: 0;
-  padding: 10px 15px;
-}
-
-.controls i {
-  text-align: start;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 40px;
-  color: rgba(177, 177, 177, 0.733);
-  padding: 5px 10px;
-  cursor: pointer;
-  border: none;
-}
-
-.controls i:hover {
-  background-color: rgba(117, 117, 117, 0.144);
 }
 
 footer {
@@ -138,16 +110,33 @@ footer {
 
   .controls {
     visibility: visible;
-    margin: -20px 0px 10px 0px;
-    width: 300px;
+    margin: 0px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .controls i {
+    text-align: start;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    color: rgba(177, 177, 177, 0.733);
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 50px;
+    cursor: none;
+    padding: 0px 20px;
+  }
+
+  .controls i:hover {
+    background-color: rgba(117, 117, 117, 0.144);
   }
 
   p {
-    height: 10px;
-  }
-  .controls i {
-    font-size: 32px;
-    cursor: none;
+    margin-top: -10px;
   }
 
   footer {
