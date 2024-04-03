@@ -1,2 +1,2 @@
 # SnakeGame
-https://patrycjapiwowarczyk.github.io/SnakeGame/
+https://patrycjapiwowarczyk.github.io/snake-game/
